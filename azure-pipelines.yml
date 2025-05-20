@@ -25,7 +25,7 @@ stages:
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
         goals: 'package'
-    - publish: 'target/*.jar'
+    - publish: 'target/*.war' 
       artifact: drop
 
 - stage: Deploy
